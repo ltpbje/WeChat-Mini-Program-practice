@@ -25,7 +25,6 @@
 
 <view>~~~~~~~通过type 指定按钮类型~~~~~~~~</view>
 <button>默认按钮</button>
-
 <button type="primary">主色调按钮</button>
 <button type="warn">警告按钮</button>
 <view>~~~~~~~size="mini'小尺寸按钮~~~~~~~~</view>
