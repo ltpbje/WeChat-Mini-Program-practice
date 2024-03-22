@@ -20,3 +20,4 @@
   手机号支持长按选中
   <text selectable>1380001001010119</text>
 </view>
+<rich-text nodes="<h1 style='color:red;'>标题</h1>"></rich-text>  
