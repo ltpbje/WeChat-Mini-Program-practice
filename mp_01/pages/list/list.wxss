@@ -1,4 +1,5 @@
-.container1 view {
+/* scroll-view 样式 */
+/* .container1 view {
   width: 100px;
   height: 100px;
   text-align: center;
@@ -14,10 +15,28 @@
   background-color: lightcoral;
 }
 .container1{
-  /* display: flex;
-  justify-content: space-around; */
   border: 1px solid red;
   width: 100px;
   height: 120px;
-  
+} */
+/* 轮播图效果 */
+.swiper-container {
+  height: 150px;
+  border: 1px solid #000;
+}
+.item {
+  text-align: center;
+  line-height: 150px;
+}
+swiper-item:nth-child(1) .item{
+  background-color:lightgreen;
+}
+swiper-item:nth-child(1) .item{
+  background-color:lightgreen;
+}
+swiper-item:nth-child(2) .item{
+  background-color:lightskyblue;
+}
+swiper-item:nth-child(3) .item{
+  background-color:lightpink;
 }
