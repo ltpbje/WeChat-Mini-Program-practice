@@ -20,7 +20,7 @@
   height: 120px;
 } */
 /* 轮播图效果 */
-.swiper-container {
+/* .swiper-container {
   height: 150px;
   border: 1px solid #000;
 }
@@ -39,4 +39,5 @@ swiper-item:nth-child(2) .item{
 }
 swiper-item:nth-child(3) .item{
   background-color:lightpink;
-}
+} */
+
