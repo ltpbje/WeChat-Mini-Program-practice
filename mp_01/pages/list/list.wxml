@@ -16,8 +16,23 @@
     <view class="item">C</view>    
   </swiper-item>
 </swiper> -->
-<view>
+<!-- view相当于div -->
+<!-- <view>
   手机号支持长按选中
   <text selectable>1380001001010119</text>
 </view>
-<rich-text nodes="<h1 style='color:red;'>标题</h1>"></rich-text>  
+<rich-text nodes="<h1 style='color:red;'>标题</h1>"></rich-text>   -->
+
+<view>~~~~~~~通过type 指定按钮类型~~~~~~~~</view>
+<button>默认按钮</button>
+
+<button type="primary">主色调按钮</button>
+<button type="warn">警告按钮</button>
+<view>~~~~~~~size="mini'小尺寸按钮~~~~~~~~</view>
+<button size="mini">默认按钮</button>
+<button size="mini" type="primary">主色调按钮</button>
+<button size="mini" type="warn">警告按钮</button>
+<view>~~~~~~~lain镂空按钮~~~~~~~~</view>
+<button size="mini" plain>默认按钮</button>
+<button size="mini" type="primary" plain>主色调按钮</button>
+<button size="mini" type="warn" plain>警告按钮</button>
