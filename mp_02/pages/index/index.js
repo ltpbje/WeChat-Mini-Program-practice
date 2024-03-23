@@ -8,11 +8,19 @@ Page({
     info:'hello world',
     imgSrc: 'http://www.itheima.com/images/logo.png',
     randomNumber: Math.random()*10,//生成一个0到10的随机数
-    randomNumber1:Math.random().toFixed(2) 
+    randomNumber1:Math.random().toFixed(2) ,
+    count:0
   },
 
   tapHandler(e){
     console.log(e)
+  },
+  // 在事件处理函数中为data中的数据赋值：
+  changCount(){
+    this.setData(this.data.count += 1)
+  },
+  btnTap2(e){
+    this.setData(this.data.count += e.target.dataset.info)
   },
   /**
    * 生命周期函数--监听页面加载

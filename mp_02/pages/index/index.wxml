@@ -7,3 +7,8 @@
 <!-- 事件绑定 -->
 <!-- 定义按钮的事件处理函数 -->
 <button type="primary" bind:tap="tapHandler">按钮</button>
+
+<button type="default" bind:tap="changCount">加一</button>
+<!-- 小程序会把bindtap的属性值，统一当成事件名称来处理， -->
+<!-- 相当于事件名为 tapHandle(123)。 -->
+<button type="warn" plain bind:tap="btnTap2" data-info="{{2}}">加二</button>
