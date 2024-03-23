@@ -41,3 +41,6 @@ swiper-item:nth-child(3) .item{
   background-color:lightpink;
 } */
 
+image{
+  border: 1px solid red;
+}

@@ -23,6 +23,7 @@
 </view>
 <rich-text nodes="<h1 style='color:red;'>标题</h1>"></rich-text>   -->
 
+<!-- 按钮
 <view>~~~~~~~通过type 指定按钮类型~~~~~~~~</view>
 <button>默认按钮</button>
 <button type="primary">主色调按钮</button>
@@ -34,4 +35,12 @@
 <view>~~~~~~~lain镂空按钮~~~~~~~~</view>
 <button size="mini" plain>默认按钮</button>
 <button size="mini" type="primary" plain>主色调按钮</button>
-<button size="mini" type="warn" plain>警告按钮</button>
+<button size="mini" type="warn" plain>警告按钮</button> -->
+
+<!-- 图片image -->
+<image src="/image/1.png" mode="scaleToFill"/>
+<!-- scaleToFill  （默认值）缩放模式，不保持纵横比缩放图片使图片的宽高完全拉伸至填满 image 元素-->
+<!-- <image src="/image/1.png" mode="aspectFit"/> -->
+<!-- <image src="/image/1.png" mode="aspectFill"/> -->
+<image src="/image/1.png" mode="widthFix"/>
+<!-- <image src="/image/1.png" mode="heightFix"/> -->
