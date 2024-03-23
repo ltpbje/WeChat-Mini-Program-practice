@@ -11,7 +11,8 @@ Page({
     randomNumber1:Math.random().toFixed(2) ,
     count:0,
     msg:'你好',
-    type:1
+    type:1,
+    flag:true
   },
 
   tapHandler(e){
