@@ -2,3 +2,4 @@
 <view>{{info}}</view>
 <image style="height:50px;" src="{{imgSrc}}" mode="heightFix"/>
 <view>{{randomNumber>=5 ? '随机数大于等于5' :'随机数小于5' }}</view>
+<view>生成一个100以内的随机数 {{randomNumber1 * 100 }}</view>

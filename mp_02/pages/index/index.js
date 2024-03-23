@@ -7,7 +7,8 @@ Page({
   data: {
     info:'hello world',
     imgSrc: 'http://www.itheima.com/images/logo.png',
-    randomNumber: Math.random()*10//生成一个0到10的随机数
+    randomNumber: Math.random()*10,//生成一个0到10的随机数
+    randomNumber1:Math.random().toFixed(2) 
   },
 
   /**
