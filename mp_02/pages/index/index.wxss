@@ -1,0 +1,6 @@
+input{
+  border: 1px solid #eeeeee;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}

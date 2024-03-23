@@ -12,3 +12,12 @@
 <!-- 小程序会把bindtap的属性值，统一当成事件名称来处理， -->
 <!-- 相当于事件名为 tapHandle(123)。 -->
 <button type="warn" plain bind:tap="btnTap2" data-info="{{2}}">加二</button>
+
+<!-- bindinput -->
+<!-- <input type="text" bindinput="inputHander" style="border: 1px solid gray; width: 200px; border-radius: 10px;"/>  -->
+<!-- <input type="text" value="{{msg}}"  bindinput="inputHandler" /> -->
+
+<!-- 条件判断 -->
+<view wx:if="{{type==1}}">男</view>
+<view wx:elif="{{type==2}}">女</view>
+<view wx:else>未知</view>

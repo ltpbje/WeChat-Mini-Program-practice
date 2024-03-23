@@ -9,7 +9,9 @@ Page({
     imgSrc: 'http://www.itheima.com/images/logo.png',
     randomNumber: Math.random()*10,//生成一个0到10的随机数
     randomNumber1:Math.random().toFixed(2) ,
-    count:0
+    count:0,
+    msg:'你好',
+    type:1
   },
 
   tapHandler(e){
@@ -21,6 +23,11 @@ Page({
   },
   btnTap2(e){
     this.setData(this.data.count += e.target.dataset.info)
+  },
+  inputHandler(e){
+    // 获取输入框的数据
+    // console.log(e.detail.value)
+    this.setData(this.data.msg = e.detail.value)
   },
   /**
    * 生命周期函数--监听页面加载
