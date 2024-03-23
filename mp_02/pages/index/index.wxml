@@ -1,5 +1,9 @@
 <!-- index.wxml -->
-<view>{{info}}</view>
+<!-- <view>{{info}}</view>
 <image style="height:50px;" src="{{imgSrc}}" mode="heightFix"/>
 <view>{{randomNumber>=5 ? '随机数大于等于5' :'随机数小于5' }}</view>
-<view>生成一个100以内的随机数 {{randomNumber1 * 100 }}</view>
+<view>生成一个100以内的随机数 {{randomNumber1 * 100 }}</view> -->
+
+<!-- 事件绑定 -->
+<!-- 定义按钮的事件处理函数 -->
+<button type="primary" bind:tap="tapHandler">按钮</button>
