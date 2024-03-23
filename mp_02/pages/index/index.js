@@ -12,7 +12,8 @@ Page({
     count:0,
     msg:'你好',
     type:1,
-    flag:true
+    flag:true,
+    arr1:['华为','荣耀','vivo']
   },
 
   tapHandler(e){
