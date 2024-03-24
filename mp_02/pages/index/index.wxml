@@ -40,6 +40,6 @@
 <view>索引号是{{idx}} 项是{{itemName}} </view>
 </view>
 <view>~~~~~~~~</view>
-<view wx:for="{{userList}}" wx:key="id" >
+<view wx:for="{{userList}}" wx:key="id" class="userName">
   {{item.name}} 
 </view>
