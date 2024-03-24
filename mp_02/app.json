@@ -6,7 +6,8 @@
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "黑马程序员",
-    "navigationBarBackgroundColor": "#2b4b6b"
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "enablePullDownRefresh":true 
   },
   "style": "v2",
   "componentFramework": "glass-easel",

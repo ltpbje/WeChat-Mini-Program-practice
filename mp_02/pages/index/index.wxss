@@ -5,3 +5,8 @@ input{
   padding: 5px;
   border-radius: 5px;
 }
+view{
+  margin: 5rpx;
+  padding: 5rpx;
+  background-color:skyblue;
+}

@@ -8,3 +8,7 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+/* 全局样式 */
+view:first-of-type{ 
+  background-color: pink;
+}

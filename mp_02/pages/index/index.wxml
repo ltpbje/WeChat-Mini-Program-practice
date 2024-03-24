@@ -6,12 +6,12 @@
 
 <!-- 事件绑定 -->
 <!-- 定义按钮的事件处理函数 -->
-<button type="primary" bind:tap="tapHandler">按钮</button>
+<!-- <button type="primary" bind:tap="tapHandler">按钮</button> -->
 
-<button type="default" bind:tap="changCount">加一</button>
+<!-- <button type="default" bind:tap="changCount">加一</button> -->
 <!-- 小程序会把bindtap的属性值，统一当成事件名称来处理， -->
 <!-- 相当于事件名为 tapHandle(123)。 -->
-<button type="warn" plain bind:tap="btnTap2" data-info="{{2}}">加二</button>
+<!-- <button type="warn" plain bind:tap="btnTap2" data-info="{{2}}">加二</button> -->
 
 <!-- bindinput -->
 <!-- <input type="text" bindinput="inputHander" style="border: 1px solid gray; width: 200px; border-radius: 10px;"/>  -->
@@ -33,11 +33,11 @@
 
 <!-- 列表渲染 -->
 <view wx:for="{{arr1}}" wx:key="index">
-<view>索引号是{{index}} 项是{{item}} </view>
+索引号是{{index}} 项是{{item}}
 </view>
 <view>~~~~~~~~</view>
 <view wx:for="{{arr1}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx">
-<view>索引号是{{idx}} 项是{{itemName}} </view>
+索引号是{{idx}} 项是{{itemName}} 
 </view>
 <view>~~~~~~~~</view>
 <view wx:for="{{userList}}" wx:key="id" class="userName">
