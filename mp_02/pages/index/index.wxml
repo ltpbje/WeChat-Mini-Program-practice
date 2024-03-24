@@ -32,6 +32,14 @@
 <view wx:if="{{!flag}}">这是使用wx：if控制的元素</view> -->
 
 <!-- 列表渲染 -->
-<view wx:for="{{arr1}}">
+<view wx:for="{{arr1}}" wx:key="index">
 <view>索引号是{{index}} 项是{{item}} </view>
+</view>
+<view>~~~~~~~~</view>
+<view wx:for="{{arr1}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx">
+<view>索引号是{{idx}} 项是{{itemName}} </view>
+</view>
+<view>~~~~~~~~</view>
+<view wx:for="{{userList}}" wx:key="id" >
+  {{item.name}} 
 </view>

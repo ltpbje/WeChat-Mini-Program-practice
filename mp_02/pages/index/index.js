@@ -13,7 +13,12 @@ Page({
     msg:'你好',
     type:1,
     flag:true,
-    arr1:['华为','荣耀','vivo']
+    arr1:['华为','荣耀','vivo'],
+    userList:[
+      {id:1,name:'小红'},
+      {id:2,name:'小白'},
+      {id:3,name:'小蓝'}
+    ]
   },
 
   tapHandler(e){
