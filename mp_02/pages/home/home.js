@@ -21,6 +21,19 @@ Page({
       }
     })
   },
+  postInfo(){
+    wx.request({
+      url: 'https://applet-base-api-t.itheima.net/api/post',
+      method:'POST',
+      data:{
+        name:'zs',
+        age:20
+      },
+      success: (res)=>{
+        console.log(res.data.data)
+      }
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
