@@ -5,9 +5,9 @@
     "pages/contact/contact"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "本地生活",
+    "navigationBarBackgroundColor": "#2b4b6b"
   },
   "style": "v2",
   "componentFramework": "glass-easel",
