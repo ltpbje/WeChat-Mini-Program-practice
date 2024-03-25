@@ -7,6 +7,20 @@ Page({
   data: {
 
   },
+  // 发送GET请求
+  getInfo(){
+    wx.request({
+      url: 'https://applet-base-api-t.itheima.net/api/get',
+      method:'GET',
+      data:{
+        name:'zs',
+        age:20
+      },
+      success:(res)=>{
+        console.log(res)
+      }
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

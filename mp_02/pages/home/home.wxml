@@ -1,2 +1,3 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- <text>pages/home/home.wxml</text> -->
+<button bind:tap="getInfo">发送GET请求</button>
