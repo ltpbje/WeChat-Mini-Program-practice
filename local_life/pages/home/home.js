@@ -6,7 +6,8 @@ Page({
    */
   data: {
     // 存放轮播图数据的列表
-    swiperList:[]
+    swiperList:[],
+    gridList:[]
   },
 
   /**
@@ -14,6 +15,7 @@ Page({
    */
   onLoad(options) {
     this.getSwiperList()
+    this.getGridList()
   },
   // 获取轮播图数据的方法
   getSwiperList(){
@@ -21,8 +23,19 @@ Page({
       url: 'https://applet-base-api-t.itheima.net/slides',
       method:'GET',
       success:(res)=>{
-        console.log(res.data)
+        // console.log(res.data)
         this.setData({swiperList : res.data})
+      }
+    })
+  },
+  // 获取九宫格网格数据的方法
+  getGridList(){
+    wx.request({
+      url: 'https://applet-base-api-t.itheima.net/categories',
+      method:'GET',
+      success:(res)=>{
+        console.log(res)
+        this.setData({gridList : res.data})
       }
     })
   },
