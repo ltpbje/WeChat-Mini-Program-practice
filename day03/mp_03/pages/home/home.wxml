@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<text>pages/home/home.wxml</text>
+<!-- 声明式导航 -->
+<navigator url="/pages/message/message" open-type="switchTab">声明式导航跳转到message页面</navigator>
