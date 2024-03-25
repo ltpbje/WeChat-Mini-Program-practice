@@ -22,7 +22,7 @@ Page({
       method:'GET',
       success:(res)=>{
         console.log(res.data)
-        this.setData(this.data.swiperList =res.data)
+        this.setData({swiperList : res.data})
       }
     })
   },
