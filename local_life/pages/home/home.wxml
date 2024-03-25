@@ -14,3 +14,7 @@
 </view>
 
 <!-- 图片区域 -->
+<view class="img-box">
+  <image src="/images/link-01.png" mode="widthFix"/>
+  <image src="/images/link-02.png" mode="widthFix"/>
+</view>
