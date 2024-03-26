@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    // 导航传递过来的参数对象
+    query:{}
   },
   // 编程式导航实现后退效果
   goBack(){
@@ -19,7 +20,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.setData({
+      query:options
+    })
   },
 
   /**

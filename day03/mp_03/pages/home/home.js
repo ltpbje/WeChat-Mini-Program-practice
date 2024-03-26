@@ -5,7 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-
   },
   // 编程式导航 跳转到tabBar页面
   gotoMessage(){
