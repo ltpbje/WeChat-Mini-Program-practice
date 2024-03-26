@@ -1,4 +1,6 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
-<!-- 声明式导航 -->
+<!-- 声明式导航 跳转到tabBar页面-->
 <navigator url="/pages/message/message" open-type="switchTab">声明式导航跳转到message页面</navigator>
+<!-- 声明式导航 跳转到非tabBar页面 -->
+<navigator url="/pages/info/info"> 声明式导航跳转到info页</navigator>
