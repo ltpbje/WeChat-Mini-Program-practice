@@ -4,3 +4,8 @@
 <navigator url="/pages/message/message" open-type="switchTab">声明式导航跳转到message页面</navigator>
 <!-- 声明式导航 跳转到非tabBar页面 -->
 <navigator url="/pages/info/info"> 声明式导航跳转到info页</navigator>
+
+<!-- 编程式导航 跳转到tabBar页面-->
+<button bind:tap="gotoMessage">跳转到message页</button>
+<!-- 编程式导航 跳转到非tabBar页面-->
+<button type="primary" bind:tap="gotoInfo">跳转到info页</button>

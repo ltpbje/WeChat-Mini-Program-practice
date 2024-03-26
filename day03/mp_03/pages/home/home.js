@@ -7,6 +7,18 @@ Page({
   data: {
 
   },
+  // 编程式导航 跳转到tabBar页面
+  gotoMessage(){
+    wx.switchTab({
+      url: '/pages/message/message',
+    })
+  },
+  // 编程式导航 跳转到非tabBar页面
+  gotoInfo(){
+    wx.navigateTo({
+      url: '/pages/info/info',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
