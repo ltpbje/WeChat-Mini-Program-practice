@@ -12,3 +12,6 @@
 
 <!-- 声明式导航 传参 -->
 <navigator url="/pages/info/info?name=zs&age=20"> 声明式导航跳转到info页</navigator>
+
+<!-- 编程式导航 传参-->
+<button bind:tap="gotoInfo2">跳转到info页</button>

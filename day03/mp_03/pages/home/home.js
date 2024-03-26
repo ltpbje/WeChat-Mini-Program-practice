@@ -19,6 +19,12 @@ Page({
       url: '/pages/info/info',
     })
   },
+  // 编程式导航 传参
+  gotoInfo2(){
+    wx.navigateTo({
+      url: '/pages/info/info?name=zs&gender=男',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
