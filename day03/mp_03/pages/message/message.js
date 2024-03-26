@@ -55,6 +55,8 @@ Page({
     this.setData({
       count:0
     })
+    // 重置count之后 关闭下拉刷新效果
+    wx.stopPullDownRefresh()
   },
 
   /**
