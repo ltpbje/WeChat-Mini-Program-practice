@@ -1,2 +1,5 @@
 <!--pages/info/info.wxml-->
 <text>pages/info/info.wxml</text>
+<!-- 默认后退一级 -->
+<navigator open-type="navigateBack" >后退</navigator>
+<!-- <navigator open-type="navigateBack" delta="1">后退</navigator> -->
