@@ -7,7 +7,14 @@ Page({
   data: {
 
   },
+  // 编程式导航实现后退效果
+  goBack(){
+    // wx.navigateBack()
+    wx.navigateBack({
+      delta:1
+    })
 
+  },
   /**
    * 生命周期函数--监听页面加载
    */
