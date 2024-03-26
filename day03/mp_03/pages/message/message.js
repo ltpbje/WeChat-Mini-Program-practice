@@ -5,9 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    count:0
   },
-
+  addCount(){
+    this.setData({
+      count: this.data.count + 1
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -47,7 +51,10 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-
+    //下拉刷新 后 重置count
+    this.setData({
+      count:0
+    })
   },
 
   /**
