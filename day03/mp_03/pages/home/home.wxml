@@ -15,3 +15,4 @@
 
 <!-- 编程式导航 传参-->
 <button bind:tap="gotoInfo2">跳转到info页</button>
+<view class="box"></view>
