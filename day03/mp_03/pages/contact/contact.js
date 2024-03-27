@@ -5,14 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    colorList:[]
+  },
+  getColors(){
+    wx.request({
+      url: 'https://applet-base-api-t.itheima.net/api/color',
+      method:'GET',
+      success:({data:res})=>{
+        this.setData({
+          colorList: [...this.data.colorList,...res.data]
+        })
+      }
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.getColors()    
   },
 
   /**
