@@ -4,5 +4,18 @@
   "setting": {
     "compileHotReLoad": true,
     "urlCheck": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "联系我们页面的开发与调试",
+          "pathName": "pages/contact/contact",
+          "query": "name=zs&age=20",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }
