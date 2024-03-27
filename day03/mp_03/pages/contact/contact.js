@@ -5,9 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    colorList:[]
+    colorList:["24, 24, 25",
+      "48, 5, 39",
+      "195, 194, 237",
+      "13, 9, 25",
+      "106, 186, 143",
+      "121, 220, 242",
+      "45, 28, 15",
+      "15, 15, 15",
+      "95, 109, 43",]
   },
   getColors(){
+    wx.showLoading({
+      title: '加载中...',
+    })
     wx.request({
       url: 'https://applet-base-api-t.itheima.net/api/color',
       method:'GET',
@@ -15,6 +26,9 @@ Page({
         this.setData({
           colorList: [...this.data.colorList,...res.data]
         })
+      },
+      complete:()=>{
+        wx.hideLoading()
       }
     })
   },
@@ -65,7 +79,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-
+    this.getColors()
   },
 
   /**
