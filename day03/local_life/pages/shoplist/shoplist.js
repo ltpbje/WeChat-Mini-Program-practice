@@ -32,6 +32,9 @@ Page({
     this.getShopList()
   },
   getShopList(){
+    wx.showLoading({
+      title: '加载中...',
+    })
     wx.request({
       url: `https://applet-base-api-t.itheima.net/categories/${this.data.query.id}/shops`,
       method:"GET",
@@ -40,12 +43,14 @@ Page({
           _limit:this.data.pageSize  
       },
       success:(res)=>{
-        console.log(res)
         this.setData({
           shopList: [...this.data.shopList,...res.data],
           total:res.header['X-Total-Count'] - 0
         })
-      }
+      },
+      complete:()=>{
+        wx.hideLoading()
+      }    
     })
   },
   /**
