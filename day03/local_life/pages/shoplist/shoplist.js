@@ -9,7 +9,8 @@ Page({
     page:1,
     pageSize:10,
     total:0,
-    shopList:[]
+    shopList:[],
+    isLoading:false
   },
 
   /**
@@ -32,6 +33,9 @@ Page({
     this.getShopList()
   },
   getShopList(){
+    this.setData({
+      isLoading:true
+    })
     wx.showLoading({
       title: '加载中...',
     })
@@ -50,6 +54,9 @@ Page({
       },
       complete:()=>{
         wx.hideLoading()
+        this.setData({
+          isLoading:false
+        })
       }    
     })
   },
@@ -85,7 +92,11 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-
+    if(this.data.isLoading) return
+    this.setData({
+      page:this.data.page + 1
+    })
+    this.getShopList()
   },
 
   /**
