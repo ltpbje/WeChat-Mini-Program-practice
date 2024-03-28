@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    query:{}
+    query:{},
+    page:1,
+    pageSize:10,
+    total:0,
+    shopList:[]
   },
 
   /**
@@ -24,8 +28,26 @@ Page({
     wx.setNavigationBarTitle({
       title: this.data.query.title
     })
+    // 获取商品列表数据
+    this.getShopList()
   },
-
+  getShopList(){
+    wx.request({
+      url: `https://applet-base-api-t.itheima.net/categories/${this.data.query.id}/shops`,
+      method:"GET",
+      data:{
+          _page:this.data.page,
+          _limit:this.data.pageSize  
+      },
+      success:(res)=>{
+        console.log(res)
+        this.setData({
+          shopList: [...this.data.shopList,...res.data],
+          total:res.header['X-Total-Count'] - 0
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

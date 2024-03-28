@@ -4,5 +4,18 @@
   "setting": {
     "compileHotReLoad": true,
     "urlCheck": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "shoplist",
+          "pathName": "pages/shoplist/shoplist",
+          "query": "id=1&title=美食",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }
