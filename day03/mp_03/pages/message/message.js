@@ -6,7 +6,8 @@ Page({
    */
   data: {
     count:0,
-    userName:'zs'
+    userName:'zs',
+    country:'CHINA'
   },
   addCount(){
     this.setData({

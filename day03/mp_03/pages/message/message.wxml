@@ -3,6 +3,9 @@
 <view>count是{{count}}</view>
 <button bind:tap="addCount">count加一</button>
 <view>{{m1.toUpper(userName)}}</view>
+<view>{{m2.toLower(country)}}</view>
+<wxs module="m2" src="../../utils/tools.wxs"> 
+</wxs>
 <wxs module="m1">
 module.exports.toUpper=function(str){
   return str.toUpperCase()
