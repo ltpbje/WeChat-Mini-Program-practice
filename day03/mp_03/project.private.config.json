@@ -9,9 +9,9 @@
     "miniprogram": {
       "list": [
         {
-          "name": "联系我们页面的开发与调试",
-          "pathName": "pages/contact/contact",
-          "query": "name=zs&age=20",
+          "name": "消息页面的开发与调试",
+          "pathName": "pages/message/message",
+          "query": "",
           "launchMode": "default",
           "scene": null
         }
