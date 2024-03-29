@@ -92,6 +92,14 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
+    if(this.data.page*this.data.pageSize >=this.data.total)
+    {
+      return  wx.showToast({
+        title: '数据加载完毕!',
+        icon:'none'
+      })
+    }
+    // 判断是否还在加载
     if(this.data.isLoading) return
     this.setData({
       page:this.data.page + 1
