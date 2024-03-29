@@ -32,7 +32,7 @@ Page({
     // 获取商品列表数据
     this.getShopList()
   },
-  getShopList(){
+  getShopList(cb){
     this.setData({
       isLoading:true
     })
@@ -57,6 +57,8 @@ Page({
         this.setData({
           isLoading:false
         })
+        // cb参数存在的话执行cb() 关闭下拉刷新
+        cb&& cb()
       }    
     })
   },
@@ -85,6 +87,17 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
+    // 重置一些关键性数据
+    this.setData({
+      page:1,
+      shopList:[],
+      total:0
+    })
+    // 重新获取数据
+    this.getShopList(()=>{
+      // 关闭下拉刷新
+      wx.stopPullDownRefresh()
+    })
 
   },
 
