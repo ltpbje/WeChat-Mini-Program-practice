@@ -1,4 +1,6 @@
 <!--components/test/test.wxml-->
 <!-- 样式隔离 全局的class样式 不会影响组件内的class样式 -->
 <text>count是：{{count}}</text>
+<view></view>
+<text>父页面传过来的num是：{{max}}</text>
 <button bind:tap="addCount">+1</button>

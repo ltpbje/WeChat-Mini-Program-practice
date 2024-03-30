@@ -5,7 +5,14 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    // 完整写法
+    // max:{
+    //   type:Number,
+    //   value:10
+    // },
 
+    // 简易写法
+    max : Number
   },
 
   /**
@@ -14,12 +21,15 @@ Component({
   data: {
     count:0
   },
+  
   /**
    * 组件的方法列表
    */
   methods: {
     // 事件处理函数
     addCount(){
+      // 设置count的最大限制 不能超过this.properties.max
+      if(this.data.count>=this.properties.max) return
       this.setData({
         count:this.data.count + 1
       })

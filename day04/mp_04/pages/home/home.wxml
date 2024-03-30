@@ -5,4 +5,4 @@
 
 <text class="g-red-text">1111</text>
 <view></view>
-<my-test1></my-test1> 
+<my-test1 max="10"></my-test1> 
