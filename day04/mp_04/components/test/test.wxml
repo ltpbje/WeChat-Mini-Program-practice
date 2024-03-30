@@ -1,2 +1,4 @@
 <!--components/test/test.wxml-->
-<text>components/test/test.wxml</text>
+<!-- 样式隔离 全局的class样式 不会影响组件内的class样式 -->
+<text>count是：{{count}}</text>
+<button bind:tap="addCount">+1</button>

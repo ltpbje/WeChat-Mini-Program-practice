@@ -12,3 +12,11 @@
 view:first-of-type{ 
   background-color: pink;
 }
+
+.g-red-text{
+  color: red;
+}
+/* 全局的标签样式会影响组件内的样式 */
+/* text {
+  color: red;
+} */
