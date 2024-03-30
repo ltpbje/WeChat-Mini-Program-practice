@@ -4,3 +4,4 @@
 <view></view>
 <text>父页面传过来的num是：{{max}}</text>
 <button bind:tap="addCount">+1</button>
+<button bind:tap="showInfo">showInfo</button>

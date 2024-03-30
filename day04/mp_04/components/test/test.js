@@ -41,6 +41,10 @@ Component({
         title: `count是${this.data.count}`,
         icon:"none"
       })
+    },
+    showInfo(){
+      console.log(this.data)
+      console.log(this.properties)
     }
   }
 })

@@ -1,8 +1,10 @@
 <!--pages/home/home.wxml-->
 <!-- <text>pages/home/home.wxml</text> -->
-<button bind:tap="getInfo">发送GET请求</button>
-<button bind:tap="postInfo">发送POST请求</button>
+<!-- <button bind:tap="getInfo">发送GET请求</button>
+<button bind:tap="postInfo">发送POST请求</button> -->
 
-<text class="g-red-text">1111</text>
-<view></view>
-<my-test1 max="10"></my-test1> 
+<!-- <text class="g-red-text">1111</text> -->
+<!-- <view></view> -->
+<!-- <my-test1 max="10"></my-test1>  -->
+
+<my-test2></my-test2>

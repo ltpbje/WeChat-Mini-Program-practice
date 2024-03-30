@@ -9,9 +9,9 @@
   box-sizing: border-box;
 } 
 /* 全局样式 */
-view:first-of-type{ 
+/* view:first-of-type{ 
   background-color: pink;
-}
+} */
 
 .g-red-text{
   color: red;
