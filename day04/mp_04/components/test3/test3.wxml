@@ -1,0 +1,6 @@
+<!--components/test3/test3.wxml-->
+<view class="colorBox" style="background-color: rgb({{fullColor}});">{{fullColor}}</view>
+<button size="mini" type="warn" bind:tap="changeR">R</button>
+<button size="mini" type="default" bind:tap="changeG">G</button>
+<button size="mini" type="primary" bind:tap="changeB">B</button>
+<view>{{rgb.r}} {{rgb.g}} {{rgb.b}}</view>
