@@ -4,6 +4,9 @@ Component({
   /**
    * 组件的属性列表
    */
+  options:{
+    pureDataPattern:/^_/ // 指定所有 _ 开头的数据字段为纯数据字段
+  },
   properties: {
 
   },
@@ -12,7 +15,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    rgb:{
+    _rgb:{
       r:0,
       g:0,
       b:0
@@ -26,24 +29,29 @@ Component({
   methods: {
     changeR(){
       this.setData({
-        'rgb.r':this.data.rgb.r <255 ?  this.data.rgb.r +5 : 255 
+        '_rgb.r':this.data._rgb.r <255 ?  this.data._rgb.r +5 : 255 
       })
     },
     changeG(){
       this.setData({
-        'rgb.g':this.data.rgb.g <255 ?  this.data.rgb.g +5 : 255 
+        '_rgb.g':this.data._rgb.g <255 ?  this.data._rgb.g +5 : 255 
       })
     },
     changeB(){
       this.setData({
-        'rgb.b':this.data.rgb.b <255 ?  this.data.rgb.b +5 : 255 
+        '_rgb.b':this.data._rgb.b <255 ?  this.data._rgb.b +5 : 255 
       })
     },
    },
    observers:{
-    'rgb.r,rgb.g,rgb.b' : function(r,g,b){
+    // '_rgb.r,_rgb.g,_rgb.b' : function(r,g,b){
+    //   this.setData({
+    //     fullColor:`${r},${g},${b}`
+    //   })
+    // },
+    '_rgb.**': function(rgb){
       this.setData({
-        fullColor:`${r},${g},${b}`
+        fullColor:`${rgb.r},${rgb.g},${rgb.b}`
       })
     }
     }
