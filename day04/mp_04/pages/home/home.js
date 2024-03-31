@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    count:0
   },
   // 发送GET请求
   getInfo(){
@@ -14,7 +14,7 @@ Page({
       method:'GET',
       data:{
         name:'zs',
-        age:20
+        age:20,
       },
       success:(res)=>{
         console.log(res)

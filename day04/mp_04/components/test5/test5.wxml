@@ -1,0 +1,2 @@
+<!--components/test5/test5.wxml-->
+<view>子组件的count:{{count}}</view>
