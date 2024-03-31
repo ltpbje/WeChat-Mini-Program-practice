@@ -1,3 +1,4 @@
 <!--components/test4/test4.wxml-->
-<text>components/test4/test4.wxml</text>
-<slot></slot>  
+<slot name="before"></slot>  
+<text>这是组件的内部结构</text>
+<slot name="after"></slot>  
