@@ -1,3 +1,4 @@
 <!--components/test5/test5.wxml-->
 <view>子组件的count:{{count}}</view>
 <button bind:tap="addCount">+1</button>
+<view>myBehavior中共享的数据:{{username}}</view>
