@@ -7,6 +7,12 @@ Page({
   data: {
     count:0
   },
+  syncCount(e){
+    // console.log('子组件触发了sync');
+    this.setData({
+      count: e.detail.value
+    })
+  },
   // 发送GET请求
   getInfo(){
     wx.request({

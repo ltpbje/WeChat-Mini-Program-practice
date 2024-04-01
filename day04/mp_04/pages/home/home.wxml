@@ -15,4 +15,6 @@
 <!-- <view slot="after">~~~~~</view> -->
 <!-- </my-test4> -->
 <view>父组件的count:{{count}}</view>
-<my-test5 count="{{count}}"></my-test5>
+<view>~~~~~~~~</view>
+<!-- 当自定义组件触发“sync”事件时，调用“syncCount”方法 -->
+<my-test5 count="{{count}}" bind:sync="syncCount"></my-test5>
