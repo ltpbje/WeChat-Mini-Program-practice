@@ -40,7 +40,14 @@ Page({
       }
     })
   },
-
+  getChild(){
+    const child = this.selectComponent('.customA')
+    // console.log(child)
+    // child.setData({
+    //   count : child.properties.count + 1
+    // })
+    child.addCount()
+  },
   /**
    * 生命周期函数--监听页面加载
    */

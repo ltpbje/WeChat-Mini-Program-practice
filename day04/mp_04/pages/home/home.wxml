@@ -17,4 +17,5 @@
 <view>父组件的count:{{count}}</view>
 <view>~~~~~~~~</view>
 <!-- 当自定义组件触发“sync”事件时，调用“syncCount”方法 -->
-<my-test5 count="{{count}}" bind:sync="syncCount"></my-test5>
+<my-test5 count="{{count}}" bind:sync="syncCount" class="customA" id="cA"></my-test5>
+<button bind:tap="getChild">获取子组件的实例对象</button>
