@@ -1,6 +1,17 @@
 // pages/home/home.js
 Page({
-
+  getInfo(){
+    console.log(wx.p)
+    const res = wx.p.request({
+      method:'GET',
+      url: 'https://applet-base-api-t.itheima.net/api/get',
+      data:{
+        name:'zs',
+        age:20
+      }
+    })
+    console.log(res)
+  },
   /**
    * 页面的初始数据
    */
