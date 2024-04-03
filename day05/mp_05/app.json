@@ -1,4 +1,7 @@
 {
+  "usingComponents": {
+    "my-numbers":"./components/numbers/numbers"
+  },
   "pages": [
     "pages/home/home",
     "pages/message/message",

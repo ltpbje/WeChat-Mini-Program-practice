@@ -2,3 +2,5 @@
 <view>{{numA}}+{{numB}}={{sum}}</view>
 <button size="mini" type="primary" bind:tap="btnHandle1" data-step="{{1}}">numA+1</button>
 <button size="mini" type="warn" bind:tap="btnHandle1" data-step="{{-1}}">numA-1</button>
+<view>~~~~~~~~</view>
+<my-numbers></my-numbers>
