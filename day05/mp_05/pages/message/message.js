@@ -20,7 +20,10 @@ Page({
       actions:['updateNum1']
     })
   },
-
+  btnHandle1(e){
+    // console.log(e)
+    this.updateNum1(e.target.dataset.step)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
