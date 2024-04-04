@@ -7,6 +7,23 @@
     "pages/message/message",
     "pages/contact/contact"
   ],
+  "subPackages": [
+    {
+      "root":"pkgA",
+      "name": "p1",
+      "pages":[
+          "pages/cat/cat",
+          "pages/dog/dog"
+      ]
+    },
+    {
+      "root": "pkgB",
+      "name": "p2",
+      "pages": [
+        "pages/apple/apple"
+      ]
+    }
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#13A7A0",
