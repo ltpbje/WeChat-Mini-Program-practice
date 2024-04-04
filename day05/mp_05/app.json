@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-    "my-numbers":"./components/numbers/numbers"
+    "my-numbers":"./components/numbers/numbers",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
   },
   "pages": [
     "pages/home/home",
