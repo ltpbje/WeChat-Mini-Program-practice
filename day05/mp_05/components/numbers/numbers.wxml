@@ -1,2 +1,4 @@
 <!--components/numbers/numbers.wxml-->
-<text>components/numbers/numbers.wxml</text>
+<view>{{numA}}+{{numB}}={{sum}}</view>
+<button size="mini" type="primary" bind:tap="btnHandle2" data-step="{{1}}">numB+1</button>
+<button size="mini" type="warn" bind:tap="btnHandle2" data-step="{{-1}}">numB-1</button>
