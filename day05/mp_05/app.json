@@ -21,7 +21,8 @@
       "name": "p2",
       "pages": [
         "pages/apple/apple"
-      ]
+      ],
+      "independent": true
     }
   ],
   "window": {
