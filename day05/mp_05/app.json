@@ -16,6 +16,7 @@
           "pages/dog/dog"
       ]
     },
+    
     {
       "root": "pkgB",
       "name": "p2",
@@ -25,6 +26,12 @@
       "independent": true
     }
   ],
+  "preloadRule":{
+      "pages/contact/contact":{
+        "packages": ["p1"],
+        "network": "all"
+      }
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#13A7A0",
@@ -32,6 +39,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "custom": true,
     "list": [
       {
         "pagePath": "pages/home/home",
