@@ -26,7 +26,8 @@ Component({
         "pagePath": "pages/message/message",
         "text": "消息",
         "iconPath": "/images/tabs/message.png",
-        "selectedIconPath": "/images/tabs/message-active.png"
+        "selectedIconPath": "/images/tabs/message-active.png",
+        info:2
       },
       {
         "pagePath": "pages/contact/contact",
