@@ -1,5 +1,21 @@
 // custom-tab-bar/index.js
+import { storeBindingsBehavior } from "mobx-miniprogram-bindings";
+import { store } from "../store/store";
 Component({
+  behaviors: [storeBindingsBehavior],
+  storeBindings:{
+    store,
+    fields: {
+      sum: 'sum'
+    }
+  },
+  observers:{
+    'sum':function(val){
+      this.setData({
+        'list[1].info':val
+      })
+    }
+  },
   options:{
     styleIsolation:"shared"
   },
