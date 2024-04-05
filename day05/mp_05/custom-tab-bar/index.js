@@ -6,7 +6,11 @@ Component({
   storeBindings:{
     store,
     fields: {
-      sum: 'sum'
+      sum: 'sum',
+      active:'activeTabBarIndex'
+    },
+    actions:{
+      updateActive:'updateActiveTabBarIndex'
     }
   },
   observers:{
@@ -30,7 +34,6 @@ Component({
    * 组件的初始数据
    */
   data: {
-    active: 0,
     list: [
       {
         "pagePath": "/pages/home/home",
@@ -59,7 +62,8 @@ Component({
    */
   methods: {
     onChange(event) {
-      this.setData({ active: event.detail })
+      // this.setData({ active: event.detail })
+      this.updateActive(event.detail)
       wx.switchTab({
         url: this.data.list[event.detail].pagePath,
       })

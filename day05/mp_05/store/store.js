@@ -3,6 +3,7 @@ export const store = observable({
   // 数据字段
   numA:1,
   numB:2,
+  activeTabBarIndex: 0,
   // 计算属性
   get sum(){
     return this.numA+this.numB
@@ -13,5 +14,9 @@ export const store = observable({
   }),
   updateNum2: action(function(step){
     this.numB += step
+  }),
+  updateActiveTabBarIndex:action(function(index){
+    this.activeTabBarIndex = index
   })
+
 })
